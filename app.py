@@ -43,7 +43,7 @@ if submit_question:
         # Call OpenAI ChatCompletion with new SDK syntax
         with st.spinner("Consulting the stars... 🔮"):
             response = openai.chat.completions.create(
-                model="gpt-4",
+                model="gpt-3.5-turbo",
                 messages=st.session_state.messages,
                 temperature=0.8,
                 max_tokens=500,
